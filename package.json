@@ -1,0 +1,12 @@
+{
+  "name": "expo-google-web",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:dalcib/expo-google-web.git",
+  "author": "Dalci de Jesus Bagolin <dalci.b+npm@gmail.com> (https://github.org/dalcib)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/gapi.auth2": "^0.0.47",
+    "tslint-config-prettier": "^1.13.0"
+  }
+}
