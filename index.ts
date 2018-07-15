@@ -1,3 +1,5 @@
+import loadScript from '@lourd/load-script'
+
 interface LogInConfig {
   //androidClientId?: string
   //androidStandaloneAppClientId?: string
@@ -31,6 +33,9 @@ interface User {
 }
 
 export async function logInAsync(config: LogInConfig) {
+  if (typeof gapi === 'undefined') {
+    await loadScript('https://apis.google.com/js/api.js')
+  }
   return new Promise((resolve, reject) => {
     gapi.auth2.authorize(
       {
